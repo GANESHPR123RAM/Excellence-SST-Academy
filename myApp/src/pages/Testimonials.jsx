@@ -11,7 +11,7 @@ const Testimonials = () => {
 
     const fetchTopers = async () => {
         try {
-            const res = await fetch("http://localhost:3000/api/admin/GetTopers");
+            const res = await fetch("https://excellence-sst-academy.onrender.com/api/admin/GetTopers");
             const data = await res.json();
             setTopers(data.fetchTopers);
             setLoading(false);
@@ -23,7 +23,7 @@ const Testimonials = () => {
 
     const fetchTopersReview = async () => {
         try {
-            const res = await fetch("http://localhost:3000/api/admin/GetTopersReview");
+            const res = await fetch("https://excellence-sst-academy.onrender.com/api/admin/GetTopersReview");
             const data = await res.json();
             setTopToppers(data.fetchTopersReview);
 
@@ -98,7 +98,7 @@ const Testimonials = () => {
                             <div key={i} className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-200 text-center hover:shadow-md transition-shadow">
                                 <div className="w-20 h-20 md:w-32 md:h-32 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
                                     <img
-                                        src={`http://localhost:3000/${student.path}`}
+                                        src={`https://excellence-sst-academy.onrender.com/${student.path}`}
                                         alt={student.name} className="w-full h-full object-cover" />
                                 </div>
                                 <h4 className="font-bold text-slate-800 text-sm md:text-base leading-tight h-10 flex items-center justify-center">{student.name}</h4>

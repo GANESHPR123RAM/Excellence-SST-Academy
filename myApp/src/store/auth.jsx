@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 
         try {
             // setIsLoading(true);
-            const response = await fetch('http://localhost:3000/api/auth/user', {
+            const response = await fetch('https://excellence-sst-academy.onrender.com/api/auth/user', {
                 method: 'GET',
                 headers: {
                     Authorization: AuthorizationToken,

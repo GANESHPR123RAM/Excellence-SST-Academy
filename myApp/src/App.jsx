@@ -12,7 +12,6 @@ import Error from './pages/error';
 import AdminLogin from './admin/Admin-Login';
 import AdminLogout from './admin/Admin-Logout';
 import Register from './admin/Register';
-// import AdminPanel from './admin/AdminPanel';
 import Topers from './admin/topers';
 import TopersReview from './admin/TopersReview';
 import Navbar from './components/Navbar';

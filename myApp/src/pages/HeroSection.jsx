@@ -10,7 +10,7 @@ const HeroSection = () => {
 
   const fetchDemoLink = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/admin/GetDemoLink");
+      const res = await fetch("https://excellence-sst-academy.onrender.com/api/admin/GetDemoLink");
       const data = await res.json();
       setDemoLink(data.fetchDemoLink);
 

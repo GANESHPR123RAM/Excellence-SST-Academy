@@ -12,7 +12,7 @@ function DemoLink() {
 
     const fetchDemoLinkData = async () => {
         try {
-            const response = await fetch("http://localhost:3000/api/admin/GetDemoLink", {
+            const response = await fetch("https://excellence-sst-academy.onrender.com/api/admin/GetDemoLink", {
                 method: 'GET',
                 headers: {
                     Authorization: AuthorizationToken,
@@ -31,7 +31,7 @@ function DemoLink() {
 
     const deleteUser = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/admin/DemoLink/delete/${id}`, {
+            const response = await fetch(`https://excellence-sst-academy.onrender.com/api/admin/DemoLink/delete/${id}`, {
                 method: 'DELETE',
                 headers: {
                     Authorization: AuthorizationToken,
@@ -64,7 +64,7 @@ function DemoLink() {
 
         try {
             const response = await axios.post(
-                'http://localhost:3000/api/admin/DemoLink',
+                'https://excellence-sst-academy.onrender.com/api/admin/DemoLink',
                 { title, link, message },
                 {
                     headers: {

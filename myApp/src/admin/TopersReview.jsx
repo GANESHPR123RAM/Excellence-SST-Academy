@@ -15,7 +15,7 @@ function TopersReview() {
 
     const fetchToperReviewData = async () => {
         try {
-            const response = await fetch("http://localhost:3000/api/admin/GetTopersReview", {
+            const response = await fetch("https://excellence-sst-academy.onrender.com/api/admin/GetTopersReview", {
                 method: 'GET',
                 headers: {
                     Authorization: AuthorizationToken,
@@ -36,7 +36,7 @@ function TopersReview() {
 
     const deleteUser = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/admin/TopersReview/delete/${id}`, {
+            const response = await fetch(`https://excellence-sst-academy.onrender.com/api/admin/TopersReview/delete/${id}`, {
                 method: 'DELETE',
                 headers: {
                     Authorization: AuthorizationToken,
@@ -73,7 +73,7 @@ function TopersReview() {
 
         try {
             const response = await axios.post(
-                'http://localhost:3000/api/admin/TopersReview',
+                'https://excellence-sst-academy.onrender.com/api/admin/TopersReview',
                 { Name, Marks, Year, Class, message },
                 {
                     headers: {

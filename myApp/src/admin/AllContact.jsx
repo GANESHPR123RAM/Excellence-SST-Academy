@@ -8,7 +8,7 @@ const AllContacts = () => {
   const fetchContacts = async () => {
     try {
       const res = await fetch(
-        "http://localhost:3000/api/form/Allcontact",
+        "https://excellence-sst-academy.onrender.com/api/form/Allcontact",
         {
           method: "GET",
           headers: {

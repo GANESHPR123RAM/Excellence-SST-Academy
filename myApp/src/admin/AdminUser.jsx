@@ -8,7 +8,7 @@ export const AdminUsers = () => {
 
   const getAlluserData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/admin/users", {
+      const response = await fetch("https://excellence-sst-academy.onrender.com/api/admin/users", {
         method: "GET",
         headers: { Authorization: AuthorizationToken },
       });
@@ -22,7 +22,7 @@ export const AdminUsers = () => {
   const deleteUser = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/admin/users/delete/${id}`,
+        `https://excellence-sst-academy.onrender.com/api/admin/users/delete/${id}`,
         {
           method: "DELETE",
           headers: { Authorization: AuthorizationToken },

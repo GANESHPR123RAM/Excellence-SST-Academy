@@ -14,7 +14,7 @@ export const AdminUpdate = () => {
 
     const getSingleUserData = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/admin/users/${params.id}`, {
+            const response = await fetch(`https://excellence-sst-academy.onrender.com/api/admin/users/${params.id}`, {
                 method: 'GET',
                 headers: {
                     Authorization: AuthorizationToken,
@@ -46,7 +46,7 @@ export const AdminUpdate = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch(`http://localhost:3000/api/admin/users/update/${params.id}`, {
+            const response = await fetch(`https://excellence-sst-academy.onrender.com/api/admin/users/update/${params.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ const Topers = () => {
   // Fetch data from API
   const fetchTopers = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/admin/GetTopers', {
+      const response = await fetch('https://excellence-sst-academy.onrender.com/api/admin/GetTopers', {
         method: "GET",
         headers: {
           Authorization: AuthorizationToken,
@@ -30,7 +30,7 @@ const Topers = () => {
 
   const deleteUser = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/admin/Topers/delete/${id}`, {
+      const response = await fetch(`https://excellence-sst-academy.onrender.com/api/admin/Topers/delete/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: AuthorizationToken,
@@ -91,7 +91,7 @@ const Topers = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:3000/api/admin/Topers',
+        'https://excellence-sst-academy.onrender.com/api/admin/Topers',
         uploadData,
         {
           headers: {
@@ -169,7 +169,7 @@ const Topers = () => {
                 {/* Image */}
                 <div className="h-64 w-full overflow-hidden">
                   <img
-                    src={`http://localhost:3000/${data.path}`}
+                    src={`https://excellence-sst-academy.onrender.com/${data.path}`}
                     alt={data.name}
                     className="w-full h-full object-cover hover:scale-105 transition"
                   />
