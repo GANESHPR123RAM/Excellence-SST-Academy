@@ -8,17 +8,17 @@ import ResourceHub from './pages/ResourceHub';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import WhatsAppButton from './pages/WhatsAppButton';
-import Error from './pages/error';
+import Error from './pages/Error';
 import AdminLogin from './admin/Admin-Login';
 import AdminLogout from './admin/Admin-Logout';
 import Register from './admin/Register';
-import Topers from './admin/topers';
+import Topers from './admin/Topers';
 import TopersReview from './admin/TopersReview';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { AdminUsers } from './admin/AdminUser';
 import DemoLink from './admin/DemoLink';
-import AllContacts from './admin/allContact';
+import AllContacts from './admin/AllContact';
 
 function App() {
   return (
