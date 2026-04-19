@@ -330,7 +330,7 @@ const MobileMenu = ({ isLoggedIn, isHamburgerMenuOpen, closeHamburger }) => {
                       <span>Contact</span>
                     </NavLink>
                   </li>
-                  {/* <li>
+                  <li>
                     <NavLink
                       to="/resources"
                       onClick={closeHamburger}
@@ -351,7 +351,7 @@ const MobileMenu = ({ isLoggedIn, isHamburgerMenuOpen, closeHamburger }) => {
                       </svg>
                       <span>Resources</span>
                     </NavLink>
-                  </li> */}
+                  </li>
                   <li>
                     <NavLink
                       to="/courses"
