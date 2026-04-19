@@ -64,10 +64,10 @@ const ResourceHub = () => {
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
             <div className="bg-white rounded-2xl p-6 w-[90%] max-w-md text-center shadow-xl">
               <h2 className="text-xl font-bold text-slate-800 mb-4">
-                Demo Classes Coming Soon 🎥
+                Resources Coming Soon!
               </h2>
               <p className="text-slate-600 mb-6">
-                We are preparing high-quality demo classes for you. Stay tuned!
+                We are preparing high-quality resources for you. Stay tuned!
               </p>
               <button
                 onClick={() => setShowPopup(false)}
