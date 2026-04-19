@@ -1,7 +1,7 @@
 import { useEffect, useState, Fragment } from "react";
 import { useAuth } from "../store/auth";
 
-const AllContacts = () => {
+const AllContact = () => {
   const { AuthorizationToken } = useAuth();
   const [contacts, setContacts] = useState([]);
 
@@ -115,4 +115,4 @@ const AllContacts = () => {
   );
 };
 
-export default AllContacts;
+export default AllContact;

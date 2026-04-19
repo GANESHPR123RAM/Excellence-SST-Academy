@@ -9,16 +9,16 @@ import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import WhatsAppButton from './pages/WhatsAppButton';
 import Error from './pages/Error';
-import AdminLogin from './admin/Admin-Login';
-import AdminLogout from './admin/Admin-Logout';
+import AdminLogin from './admin/AdminLogin';
+import AdminLogout from './admin/AdminLogout';
 import Register from './admin/Register';
 import Topers from './admin/Topers';
 import TopersReview from './admin/TopersReview';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { AdminUsers } from './admin/AdminUser';
+import AdminUser from './admin/AdminUser';
 import DemoLink from './admin/DemoLink';
-import AllContacts from './admin/AllContact';
+import AllContact from './admin/AllContact';
 
 function App() {
   return (
@@ -38,11 +38,11 @@ function App() {
             <Route path='/Register' element={<Register />} />
             <Route path='/Logout' element={<AdminLogout />} />
             <Route path='*' element={<Error />} />
-            <Route path='/AdminPanel/User' element={<AdminUsers />} />
+            <Route path='/AdminPanel/User' element={<AdminUser />} />
             <Route path='/AdminPanel/Topers' element={<Topers />} />
             <Route path='/AdminPanel/TopersReview' element={<TopersReview />} />
             <Route path='/AdminPanel/DemoLink' element={<DemoLink />} />
-            <Route path='/AdminPanel/AllContacts' element={<AllContacts />} />
+            <Route path='/AdminPanel/AllContacts' element={<AllContact />} />
           </Routes>
         </main>
         <Footer />

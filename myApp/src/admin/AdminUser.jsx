@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useAuth } from '../store/auth'  
 import { Link } from 'react-router-dom'
 
-export const AdminUsers = () => {
+export const AdminUser = () => {
   const [users, setUser] = useState([]);
   const { AuthorizationToken } = useAuth();
 
@@ -106,4 +106,4 @@ export const AdminUsers = () => {
   );
 };
 
-export default AdminUsers;
+export default AdminUser;

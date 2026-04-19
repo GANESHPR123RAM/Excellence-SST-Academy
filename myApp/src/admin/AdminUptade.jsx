@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useParams } from 'react-router-dom'
 import { useAuth } from '../store/auth'
 
-export const AdminUpdate = () => {
+const AdminUpdate = () => {
     const [data, setData] = useState({
         username: "",
         email: "",
@@ -132,3 +132,5 @@ export const AdminUpdate = () => {
     );
 };
 
+
+export default AdminUpdate;
