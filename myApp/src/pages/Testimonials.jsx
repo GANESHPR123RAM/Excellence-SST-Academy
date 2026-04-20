@@ -43,10 +43,16 @@ const Testimonials = () => {
             ? topers
             : topers.filter(s => s.Class === activeCategory);
 
+    // const filteredScorers =
+    //     activeYear === "All"
+    //         ? filteredByCategory
+    //         : filteredByCategory.filter(s => s.Year === activeYear);
+
     const filteredScorers =
-        activeYear === "All"
+        (activeYear === "All"
             ? filteredByCategory
-            : filteredByCategory.filter(s => s.Year === activeYear);
+            : filteredByCategory.filter(s => s.Year === activeYear)
+        ).sort((a, b) => Number(b.Marks) - Number(a.Marks));
 
     // Dynamic filter options from DB
     const years = ["All", ...new Set(topers.map(t => t.Year))];
